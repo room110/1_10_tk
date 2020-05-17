@@ -12,6 +12,7 @@
 
 main{
   width: 960px;
+  height: auto;
   margin: 50px auto;
 }
 
@@ -31,22 +32,16 @@ main{
 .step-img1{
   height: 150px;
   background-image: url(img/flow01.png);
-  background-size: cover;
-  background-position: bottom;
 }
 
 .step-img2{
   height: 150px;
   background-image: url(img/flow02.png);
-  background-size: cover;
-  background-position: bottom;
 }
 
 .step-img3{
   height: 150px;
   background-image: url(img/flow03.png);
-  background-size: cover;
-  background-position: bottom;
 }
 
 .step-num{
@@ -60,4 +55,56 @@ main{
 
 .title{
   margin: 15px 0 5px;
+}
+
+
+@media screen and (max-width: 768px){
+
+main{
+  width: 90%;
+  height: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.step-box{
+  float: none;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #eee;
+  padding-bottom: 100px;
+}
+.step-box:last-child{
+  margin-right: 0;
+}
+.step-img1{
+  height: 250px;
+  background-image: url(img/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+}
+.step-img2{
+  height: 250px;
+  background-image: url(img/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+}
+.step-img3{
+  height: 250px;
+  background-image: url(img/flow03.png);
+  background-size: cover;
+  background-position: bottom;
+}
+.step-num{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FF9A4B;
+  color: #fff;
+  padding: 3px;
+}
+.title{
+  margin: 15px 0 5px;
+}
 }
